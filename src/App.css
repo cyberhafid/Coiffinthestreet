@@ -1,19 +1,6 @@
 .App {
   text-align: center;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  color : black;
-
-    padding-right: 15px;
-    padding-left: 15px;
-
-
 }
-
-
-
-
 
 .App-link {
   color: #61dafb;
@@ -26,4 +13,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+.layout-topbar {
+  background-color: #20272a;
+  display: block;
+  padding: 0;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+.layout-sidebar {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  height: 100%;
+  background-color: #fff;
+  width: 20%;
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+
+.layout-content {
+  margin-left: 20%;
+  padding-top: 70px;
+}
+
+.layout-content .content-section {
+  display: block;
+  padding: 30px;
+  background-color: #f5f7f8;
 }

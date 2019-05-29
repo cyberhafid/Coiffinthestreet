@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import '../App.css';
 import List from '../components/contents/Liste';
 import MenuDemo from '../components/contents/Menu';
 import Code from '../components/contents/Code';
@@ -11,21 +11,20 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className="container-fluid backg">
 
-        <Row>
-          <Col xs="3" sm="3">
+      <React.Fragment>
+      <div className="layout-sidebar">
+
             <MenuDemo />
-          </Col>
-
-          <Col xs="9" sm="9">
+            </div>
+            
+ <div className="layout-content">
             <List />
             <Code />
-          </Col>
+          
+            </div>
 
-        </Row>
-      </div>
-
+</React.Fragment>
 
     );
   }

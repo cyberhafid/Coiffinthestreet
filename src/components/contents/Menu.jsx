@@ -8,13 +8,33 @@ import {Menu} from 'primereact/menu';
         this.state = {
             items: [
                 {
-                    label: 'Options',
-                    items: [{label: 'Upload', icon: 'pi pi-fw pi-upload', command:()=>{ window.location.hash="/fileupload"; }},
-                            {label: 'Home', icon: 'pi pi-fw pi-home', url: 'http://primetek.com.tr'}]
+                    label: 'GENERAL',
+                    items: [{label: 'Home', icon: 'pi pi-fw pi-home', url: './api'},
+                    {label: 'Calendar', icon: 'pi pi-fw pi-calendar'},
+                    {label: 'Documentation', icon: 'pi pi-fw pi-file'}]
                 }, 
+
+
+                {
+                    label: 'Partenaire',
+                    items: [
+                        {label:'Users',icon:'pi pi-fw pi-user'},
+                        {label:'Search',icon:'pi pi-fw pi-users'},
+                        {label:'Filter',icon:'pi pi-fw pi-filter'}]
+                },
+
+
+
+
+
+                {
+                    label: 'Api',
+                    items: [{label: 'Documentation', icon: 'pi pi-fw pi-file'}
+                      ]
+                },
                 {
                     label: 'Account',
-                    items: [{label: 'Components', icon: 'pi pi-fw pi-cog', command:()=>{ window.location.hash="/"; }},
+                    items: [{label: 'Configuration', icon: 'pi pi-fw pi-cog', },
                             {label: 'Sign Out', icon: 'pi pi-fw pi-power-off'} ]
                 }
             ]
@@ -23,16 +43,17 @@ import {Menu} from 'primereact/menu';
 
     render() {
         return (
-            <div>
+
+            
+            <div className="layout-menu">
                 <div className="content-section">
                     <div className="feature-intro">
-                        <h1>Menu</h1>
-                        <p>Menu is a navigation/command component that supports dynamic and static positioning.</p>
-                    </div>
+                     
+                                           </div>
                 </div>
 
                 <div className="content-section implementation button-demo">
-                    <h3 className="first">Basic</h3>
+                
                     <Menu model={this.state.items}/>
 
                     <h3>Popup</h3>
