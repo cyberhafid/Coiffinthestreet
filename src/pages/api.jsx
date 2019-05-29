@@ -1,33 +1,51 @@
+
 import React, { Component } from 'react';
-
-import Code from '../components/contents/Code';
-
-
+import { Panel } from 'primereact/panel';
 
 export default class Api extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
-      <div className="container-fluid backg">
-       <Code />
-       <div>
-      <h3 class="mt-5">Deuxieme partie</h3>
-      <p>Install reactstrap and peer dependencies via NPM</p>
+      <div>
+        <div className="content-section introduction">
+          <div className="feature-intro">
+            <h1>Panel</h1>
+            <p>Panel is a grouping component providing with content toggle feature.</p>
+          </div>
+        </div>
 
-      <pre class="language-bash">
-      <code class="language-bash">
-      <span class="token function">npm</span>
-       <span class="token function">install</span> 
-       --save reactstrap react react-dom</code>
-       </pre>
-    </div>
+        <div className="content-section implementation">
+          <Panel header="users/">
 
-  
-  
-       
+            <div>
+              <h3 class="mt-5">POST</h3>
+              <p>IAjouter un utilisateur</p>
+
+              <pre class="language-bash">
+                <code class="language-bash">
+                  <span class="token function">npm</span>
+                  <span class="token function">GOO</span>
+                  users/ </code>
+              </pre>
+            </div>
+
+            <div>
+              <h3 class="mt-5">GET users/:id</h3>
+              <p>IAjouter un utilisateur</p>
+
+              <pre class="language-bash">
+                <code class="language-bash">
+                  <span class="token function">npm</span>
+                  <span class="token function">GOO</span>
+                  users/ </code>
+              </pre>
+            </div>
+
+          </Panel>
+
+        </div>
       </div>
-    );
+    )
   }
 }
+
+

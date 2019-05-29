@@ -10,18 +10,15 @@ import {Menu} from 'primereact/menu';
                 {
                     label: 'GENERAL',
                     items: [{label: 'Home', icon: 'pi pi-fw pi-home', url: './api'},
-                    {label: 'Maraude', icon: 'pi pi-fw pi-calendar'},
-                    {label: 'Documentation', icon: 'pi pi-fw pi-file'},
-                    {label: 'User', icon: 'pi pi-fw pi-user'}
-                
-                ]
+                    {label: 'Calendar', icon: 'pi pi-fw pi-calendar'},
+                    {label: 'Documentation', icon: 'pi pi-fw pi-file'}]
                 }, 
 
 
                 {
                     label: 'Partenaire',
                     items: [
-                        {label:'Coiffeurs',icon:'pi pi-fw pi-user'},
+                        {label:'Users',icon:'pi pi-fw pi-user'},
                         {label:'Search',icon:'pi pi-fw pi-users'},
                         {label:'Filter',icon:'pi pi-fw pi-filter'}]
                 },
