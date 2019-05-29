@@ -12,7 +12,7 @@ import {Menu} from 'primereact/menu';
                     items: [{label: 'Home', icon: 'pi pi-fw pi-home', url: './api'},
                     {label: 'Maraude', icon: 'pi pi-fw pi-calendar'},
                     {label: 'Documentation', icon: 'pi pi-fw pi-file'},
-                    {label: 'User', icon: 'pi pi-fw pi-user'}
+                    {label: 'User', icon: 'pi pi-fw pi-user', url: './users'}
                 
                 ]
                 }, 
@@ -54,8 +54,6 @@ import {Menu} from 'primereact/menu';
                 
                     <Menu model={this.state.items}/>
 
-                    <h3>Popup</h3>
-                    <Menu model={this.state.items} popup={true} ref={el => this.menu = el}/>
                     
                 </div>
 

@@ -6,11 +6,13 @@ import MenuDemo from './components/contents/Menu';
 
 function App() {
   return (
+    <React.Fragment>
+    <div className="App">
     <div className="layout-wrapper">
-      <React.Fragment>
-
+  
+ 
         <div className="layout-topbar">
-          <Navbar />
+     
         </div>
 
         <div className="layout-sidebar">
@@ -20,9 +22,10 @@ function App() {
         <div className="layout-content">
           <Routeur />
         </div>
-
-      </React.Fragment>
+        </div>
+  
     </div>
+    </React.Fragment>
   );
 }
 
